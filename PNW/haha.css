@@ -1,0 +1,62 @@
+.rotate180 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.rotate180 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(180deg);
+}
+.fun {background-color: #C16F6F;
+  color: peachpuff;
+  margin: 80px;
+  padding: 50px
+}
+.blue {background-color: #F1A4A4;
+  color: #2C6975;
+  margin: 80px;
+  padding: 50px
+}
+.title {background-color: darkred;
+  color: peachpuff;
+  margin: 80px;
+  padding: 50px
+  align: middle;
+}
+ .Fall {
+
+   display:block;
+   overflow:auto;
+   border-style: solid;
+   padding-right: -10px;
+   margin-right: -10px;
+
+ }
+.Dropdown{
+position: absolute;
+display: none;
+
+
+
+}
+.Fall:hover .Dropdown{
+display: block;
+
+
+
+
+}
+
+
+.haha{
+background-color: #F9F5F2;
+
+
+
+}
