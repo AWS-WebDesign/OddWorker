@@ -1,0 +1,295 @@
+<html>
+	<head>
+	  <title>buzzfeed quiz</title>
+	  <link href="buzzfeed.css" type="text/css" rel="stylesheet">
+
+		<script type="text/javascript">
+
+	    function show_result() {
+			<!--		function to get input,calulate and show result	-->
+	        var name = document.getElementById("user").value
+			//get username
+	        var score = 0;
+			//define a variable to calculate score
+
+			//Calculate the score according to different options
+	        if (document.getElementById("white").checked)
+	        {
+	          score += 1;
+	        }
+	        if (document.getElementById("blue").checked)
+	        {
+	          score += 2;
+	        }
+
+	        if (document.getElementById("green").checked)
+	        {
+	          score += 3;
+	        }
+
+	        if (document.getElementById("black").checked)
+	        {
+	          score += 4;
+	        }
+
+			if (document.getElementById("apple").checked)
+	        {
+	          score += 1;
+	        }
+
+	        if (document.getElementById("banana").checked)
+	        {
+	          score += 2;
+	        }
+
+	        if (document.getElementById("watermelon").checked)
+	        {
+	          score += 3;
+	        }
+
+	        if (document.getElementById("orange").checked)
+	        {
+	          score += 4;
+	        }
+
+	        if (document.getElementById("cat").checked)
+	        {
+	          score += 1;
+	        }
+
+	        if (document.getElementById("dog").checked)
+	        {
+	          score += 2;
+	        }
+
+	        if (document.getElementById("cow").checked)
+	        {
+	          score += 3;
+	        }
+
+	        if (document.getElementById("eagle").checked)
+	        {
+	          score += 4;
+	        }
+
+	        if (document.getElementById("football").checked)
+	        {
+	          score += 1;
+	        }
+
+	        if (document.getElementById("basketball").checked)
+	        {
+	          score += 2;
+	        }
+
+	        if (document.getElementById("swim").checked)
+	        {
+	          score += 3;
+	        }
+
+	        if (document.getElementById("tennis").checked)
+	        {
+	          score += 4;
+	        }
+			//Show different results according to scores
+	        if (4 >= score) {
+	        	alert("Hi,"+ name + " The best job for you is doctor!")
+	        }
+	        else if (8 >= score) {
+	        	alert("Hi,"+ name + " The best job for you is soldier!")
+	        }
+	        else if (12 >= score) {
+				alert("Hi,"+ name + " The best job for you is framer!")
+	        }
+	        else if (16 >= score) {
+				alert("Hi,"+ name + " The best job for you is lawyer!")
+	        }
+	        else if (20 >= score) {
+	        alert("Hi,"+ name + " The best job for you is police!")
+	      }
+	    }
+
+	    function set_male() {
+			var a = document.getElementById("sex")
+			a.innerHTML = "male"
+		}
+
+		function set_female() {
+			var a = document.getElementById("sex")
+			a.innerHTML = "female"
+		}
+	        </script>
+
+	</head>
+
+	<body background="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572781635743&di=67864f94d121926c245bcd0792ec1c66&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F019d3855f7a7376ac7251df8d2ab9c.png%402o.png";
+>
+		<h1>A Quiz to Guess Your Future Career</h1>
+		<br>
+		<br>
+		<br>
+		<form class="style"  method="post" >
+			<div class="name">
+				<a>Your Name:</a>
+				<input type="text" name="username" id="user">
+			</div>
+
+			<div class="dropdown">
+				<a>Your Sex:</a>
+			  <button class="dropbtn" id="sex">CHOOSE ONE</button>
+			  <div class="dropdown-content" style="left:0;">
+				<a onclick="set_male()">male</a>
+				<a onclick="set_female()">female</a>
+			  </div>
+			</div>
+
+
+
+			<div>
+				  <a>CHOOSE A COLOR</a>
+					<Br>
+				<label>
+				  <input type="radio" name="color" value="white" id="white">	    <!-- doctor -->
+					<a>
+						<img width="120" height="90" src="http://img5.imgtn.bdimg.com/it/u=2965112843,2777423434&fm=26&gp=0.jpg">
+					</a>
+				</label>
+
+				<label>
+				  <input type="radio" name="color" value="blue" id="blue">    	<!-- soldier-->
+					<a>
+						<img src="https://ss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=3727304661,1872328439&fm=74&app=80&f=JPG&size=f121,90?sec=1880279984&t=38fd9f863dc90915240cb317fed49079">
+					</a>
+				</label>
+
+				<label>
+				  <input type="radio" name="color" value="green" id="green">		<!--framer-->
+					<a>
+						<img src="https://ss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=860415444,2736916697&fm=74&app=80&f=PNG&size=f121,90?sec=1880279984&t=3a649972d07a50c290fde09b567dd3b9">
+					</a>
+				</label>
+
+				<label>
+				  <input type="radio" name="color" value="black" id="black">		<!--lawyer-->
+					<a>
+						<img width="120" height="90" src="https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/baike/pic/item/a71ea8d3fd1f41344cfdfcee281f95cad0c85e5c.png">
+					</a>
+				</label>
+
+			</div>
+
+			<div>
+				  <a>CHOOSE A FRUIT</a>
+					<Br>
+				<label>
+				  <input type="radio" name="fruit" value="apple" id="apple">
+					<a>
+						<img width="120" height="90" src="https://ss1.bdstatic.com/6OF1bjeh1BF3odCf/it/u=2940564258,1154008074&fm=74&app=80&f=JPEG&size=f121,90?sec=1880279984&t=cc76aa1ff4ca9eee8009b9aec538597e">
+					</a>
+				</label>
+
+				<label>
+				  <input type="radio" name="fruit" value="banana" id="banana">
+					<a>
+						<img width="120" height="90" src="https://ss2.bdstatic.com/6Ot1bjeh1BF3odCf/it/u=1566623240,2339441223&fm=74&app=80&f=JPEG&size=f121,121?sec=1880279984&t=036a72ba867a2daabdb5f919fe270813">
+					</a>
+				</label>
+
+				<label>
+				  <input type="radio" name="fruit" value="watermelon" id="watermelon">
+					<a>
+						<img width="120" height="90" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1838135990,4282723098&fm=26&gp=0.jpg">
+					</a>
+				</label>
+
+				<label>
+				  <input type="radio" name="fruit" value="orange" id="orange">
+					<a>
+						<img width="120" height="90" src="https://ss0.bdstatic.com/6Ox1bjeh1BF3odCf/it/u=96384781,37472487&fm=74&app=80&f=JPEG&size=f121,121?sec=1880279984&t=e029dfb28abd0007f6a2a09d3503d9da">
+					</a>
+				</label>
+
+			</div>
+
+			<div>
+				  <a>CHOOSE AN ANIMAL</a>
+					<Br>
+				<label>
+				  <input type="radio" name="animal" value="cat" id="cat">
+					<a>
+						<img width="120" height="90" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2971394922,1817086454&fm=26&gp=0.jpg">
+					</a>
+				</label>
+
+				<label>
+				  <input type="radio" name="animal" value="dog" id="dog">
+					<a>
+						<img width="120" height="90" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2726331378,32014118&fm=26&gp=0.jpg">
+					</a>
+				</label>
+
+				<label>
+				  <input type="radio" name="animal" value="cow" id="cow">		<!--framer-->
+					<a>
+						<img width="120" height="90" src="https://ss0.bdstatic.com/6Ox1bjeh1BF3odCf/it/u=4163411737,4029319335&fm=74&app=80&f=PNG&size=f121,90?sec=1880279984&t=ea92594cb2bef41061cfda3c37506eb9">
+					</a>
+				</label>
+
+				<label>
+				  <input type="radio" name="animal" value="eagle" id="eagle">		<!--lawyer-->
+					<a>
+						<img width="120" height="90" src="https://ss0.bdstatic.com/6Ox1bjeh1BF3odCf/it/u=407296717,4270527377&fm=74&app=80&f=JPEG&size=f121,90?sec=1880279984&t=5451a6596f552cb543a2f390c5eb4300">
+					</a>
+				</label>
+
+			</div>
+
+			<div>
+				  <a>CHOOSE A SPORT</a>
+					<Br>
+				<label>
+				  <input type="radio" name="sport" value="football" id="football">
+					<a>
+						<img width="120" height="90" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2329387442,1612757115&fm=26&gp=0.jpg">
+					</a>
+				</label>
+
+				<label>
+				  <input type="radio" name="sport" value="basketball" id="basketball">
+					<a>
+						<img width="120" height="90" src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1117575713,3263008698&fm=26&gp=0.jpg">
+					</a>
+				</label>
+
+				<label>
+				  <input type="radio" name="sport" value="swim" id="swim">
+					<a>
+						<img width="120" height="90" src="https://ss0.bdstatic.com/6Ox1bjeh1BF3odCf/it/u=1069215778,448921127&fm=74&app=80&f=JPEG&size=f121,90?sec=1880279984&t=e0c0d85b7eca50cd8d26f37e80beeb0b">
+					</a>
+				</label>
+
+				<label>
+				  <input type="radio" name="sport" value="tennis" id="tennis">
+					<a>
+						<img width="120" height="90" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2709168509,1493044680&fm=26&gp=0.jpg">
+					</a>
+				</label>
+
+			</div>
+		<!-- -->
+
+			<div>
+				<button  class="button" style="vertical-align:middle" onclick="show_result();">
+					<span>SUBMIT</span>
+				</button>
+			</div>
+		</form>
+		<br>
+
+
+		<div >
+		  <p><span></span><span id="place"></span><a href="learn_more.html">click here to learn more</a></p>
+		</div>
+	</body>
+
+</html>
