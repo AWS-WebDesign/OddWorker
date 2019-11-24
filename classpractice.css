@@ -1,0 +1,22 @@
+div {
+  width: 80px;
+  height: 150px;
+  font-size: 32px;
+  text-align: center;
+  margin: 70px;
+  padding: 75px;
+  position: relative;
+
+  background-color: pink;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0% {background-color: green; left:100px; top:100px;}
+  25% {background-color: red; left:200px; top:0px;}
+  50% {background-color: blue; left:50px; top:50px;}
+  75% {background-color: pink; left:200px; top:200px;}
+  100% {background-color: purple; left:80px; top:80px;}
+}
